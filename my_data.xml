@@ -1,0 +1,262 @@
+<?xml version= "1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE aeroport [
+
+    <!ELEMENT aeroport (employes,pistes,avions,compagnies_aeriennes,vols)>
+    <!ATTLIST aeroport xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation CDATA #FIXED "shema_aeroport.xsd">
+    <!ELEMENT employes (employe)+>
+    <!ELEMENT employe (nom,prenom,date_naissance,lieu_naissance,adresse,role)>
+    <!ATTLIST employe id_emp CDATA #REQUIRED >
+    <!ELEMENT nom (#PCDATA) >
+    <!ELEMENT prenom (#PCDATA)>
+    <!ELEMENT date_naissance (#PCDATA)>
+    <!ELEMENT lieu_naissance (#PCDATA)>
+    <!ELEMENT adresse (voie,code_postal,ville) >
+    <!ELEMENT voie (#PCDATA)>
+    <!ATTLIST voie typeVoie CDATA #REQUIRED >
+    <!ELEMENT code_postal (#PCDATA) >
+    <!ELEMENT ville (#PCDATA)> 
+    <!ELEMENT role (#PCDATA)>
+
+    <!ELEMENT pistes (piste)+ >
+    <!ELEMENT piste (numero,orientation)>
+    <!ELEMENT numero (#PCDATA) >
+    <!ELEMENT orientation (#PCDATA) >
+    <!ATTLIST piste id_piste CDATA #REQUIRED>
+
+    <!ELEMENT avions (avion)+ >
+    <!ELEMENT avion (model,annee_mise_en_service) >
+    <!ATTLIST avion id_avion CDATA #REQUIRED>
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT annee_mise_en_service (#PCDATA)>
+
+    <!ELEMENT compagnies_aeriennes (compagnie)+ >
+    <!ELEMENT compagnie (nom_compagnie,pays) >
+    <!ATTLIST compagnie id_compt CDATA #REQUIRED>
+    <!ELEMENT nom_compagnie (#PCDATA)>
+    <!ELEMENT pays (#PCDATA) >
+
+    <!ELEMENT vols (vol)+>
+    <!ELEMENT vol (date_depart,heure_depart,date_arrive,heure_arrive,ref_avion,ref_compagnie,aeroport_depart,aeroport_arrive,piste_depart,pist_arrive)>
+    <!ATTLIST vol id_vol CDATA #REQUIRED >
+    <!ELEMENT date_depart (#PCDATA) >
+    <!ELEMENT heure_depart (#PCDATA)>
+    <!ELEMENT date_arrive (#PCDATA)>
+    <!ELEMENT heure_arrive (#PCDATA)>
+    <!ELEMENT ref_compagnie (#PCDATA)>
+    <!ELEMENT aeroport_depart (#PCDATA)>
+    <!ELEMENT aeroport_arrive (#PCDATA)>
+    <!ELEMENT ref_avion (#PCDATA)>
+    <!ELEMENT piste_depart (#PCDATA)>
+    <!ELEMENT pist_arrive (#PCDATA) >
+
+
+    
+]>
+
+<aeroport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="shema_aeroport.xsd">
+    <employes>
+        <employe id_emp="1">
+            <nom>Alpha</nom>
+            <prenom>Beta</prenom>
+            <date_naissance>1999-02-05</date_naissance>
+            <lieu_naissance>Texas</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Alma</voie>
+                <code_postal>59000</code_postal>
+                <ville>Alma</ville>
+            </adresse>
+            <role>Pilote</role>
+        </employe>
+
+        <employe id_emp="2">
+            <nom>Ceta</nom>
+            <prenom>Delta</prenom>
+            <date_naissance>1999-05-03</date_naissance>
+            <lieu_naissance>California</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Menerville</voie>
+                <code_postal>35100</code_postal>
+                <ville>Menerville</ville>
+            </adresse>
+            <role>Commandant de bord</role>
+        </employe>
+
+        <employe id_emp="3">
+            <nom>Gama</nom>
+            <prenom>lambda</prenom>
+            <date_naissance>1990-05-04</date_naissance>
+            <lieu_naissance>Roche noir</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Felix fort</voie>
+                <code_postal>35500</code_postal>
+                <ville>Felix fort</ville>
+            </adresse>
+            <role>Pilote</role>
+        </employe>
+
+        <employe id_emp="4">
+            <nom>Hello</nom>
+            <prenom>World</prenom>
+            <date_naissance>1999-05-04</date_naissance>
+            <lieu_naissance>Roche noir</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Felix fort</voie>
+                <code_postal>35500</code_postal>
+                <ville>Felix fort</ville>
+            </adresse>
+            <role>Co-pilote</role>
+        </employe>
+        <employe id_emp="5">
+            <nom>Yayo</nom>
+            <prenom>Toto</prenom>
+            <date_naissance>1999-05-04</date_naissance>
+            <lieu_naissance>RotterDam</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Felix fort</voie>
+                <code_postal>35500</code_postal>
+                <ville>Felix fort</ville>
+            </adresse>
+            <role>Co-pilote</role>
+        </employe>
+        <employe id_emp="6">
+            <nom>Yayo</nom>
+            <prenom>Toto</prenom>
+            <date_naissance>1998-01-01</date_naissance>
+            <lieu_naissance>RotterDam</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Felix fort</voie>
+                <code_postal>35500</code_postal>
+                <ville>Felix fort</ville>
+            </adresse>
+            <role>Co-pilote</role>
+        </employe>
+        <employe id_emp="7">
+            <nom>Yayo</nom>
+            <prenom>Toto</prenom>
+            <date_naissance>1998-01-01</date_naissance>
+            <lieu_naissance>RotterDam</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Felix fort</voie>
+                <code_postal>35500</code_postal>
+                <ville>Felix fort</ville>
+            </adresse>
+            <role>Pilote</role>
+        </employe>
+        <employe id_emp="8">
+            <nom>Yayo</nom>
+            <prenom>Toto</prenom>
+            <date_naissance>1998-01-01</date_naissance>
+            <lieu_naissance>RotterDam</lieu_naissance>
+            <adresse>
+                <voie typeVoie="rue">Felix fort</voie>
+                <code_postal>35500</code_postal>
+                <ville>Felix fort</ville>
+            </adresse>
+            <role>Commandant de bord</role>
+        </employe>
+    </employes>
+    
+
+    <pistes>
+        <piste id_piste="23">
+            <numero>23231453</numero>
+            <orientation>Nord-Ouest</orientation>
+        </piste>
+        <piste id_piste="1">
+                <numero>1717310</numero>
+                <orientation>Est</orientation>
+        </piste>
+        <piste id_piste="2">
+            <numero>1717305</numero>
+            <orientation>Ouest-sud</orientation>
+        </piste>
+
+    </pistes>
+
+    <avions>
+        <avion id_avion="1">
+            <model>Boing 751</model>
+            <annee_mise_en_service>1998-01-01</annee_mise_en_service>
+        </avion>
+        <avion id_avion="2">
+            <model>Boing 787</model>
+            <annee_mise_en_service>1998-01-01</annee_mise_en_service>
+        </avion>
+        <avion id_avion="3">
+            <model>Boing 737</model>
+            <annee_mise_en_service>1998-01-01</annee_mise_en_service>
+        </avion>
+    </avions>
+
+
+    <compagnies_aeriennes>
+        <compagnie id_compt="1">
+            <nom_compagnie>Allegiant Air</nom_compagnie>
+            <pays>USA</pays>
+        </compagnie>
+        <compagnie id_compt="2">
+            <nom_compagnie>United Airlines</nom_compagnie>
+            <pays>USA</pays>
+        </compagnie>
+        <compagnie id_compt="3">
+            <nom_compagnie>Delta Air Lines</nom_compagnie>
+            <pays>USA</pays>
+        </compagnie>
+        <compagnie id_compt="4">
+            <nom_compagnie>Air France</nom_compagnie>
+            <pays>France</pays>
+        </compagnie>
+    </compagnies_aeriennes>
+    <vols>
+        <vol id_vol="1">
+            <date_depart>1998-01-01</date_depart>
+            <heure_depart>10:30</heure_depart>
+            <date_arrive>1998-01-01</date_arrive>
+            <heure_arrive>11:30</heure_arrive>
+            <ref_avion>1</ref_avion>
+            <ref_compagnie>1</ref_compagnie>
+            <aeroport_depart>CDG</aeroport_depart>
+            <aeroport_arrive>JFK</aeroport_arrive>
+            <piste_depart>1</piste_depart>
+            <pist_arrive>2</pist_arrive>
+        </vol>
+
+        <vol id_vol="2">
+            <date_depart>1998-01-01</date_depart>
+            <heure_depart>11:25</heure_depart>
+            <date_arrive>1998-01-01</date_arrive>
+            <heure_arrive>17:00</heure_arrive>
+            <ref_avion>2</ref_avion>
+            <ref_compagnie>2</ref_compagnie>
+            <aeroport_depart>Frankfurt aeroport</aeroport_depart>
+            <aeroport_arrive>Dubai</aeroport_arrive>
+            <piste_depart>1</piste_depart>
+            <pist_arrive>3</pist_arrive>
+        </vol>
+        <vol id_vol="3">
+            <date_depart>1998-01-01</date_depart>
+            <heure_depart>11:25</heure_depart>
+            <date_arrive>1998-01-01</date_arrive>
+            <heure_arrive>17:00</heure_arrive>
+            <ref_avion>3</ref_avion>
+            <ref_compagnie>2</ref_compagnie>
+            <aeroport_depart>Paris</aeroport_depart>
+            <aeroport_arrive>Oslo</aeroport_arrive>
+            <piste_depart>1</piste_depart>
+            <pist_arrive>3</pist_arrive>
+        </vol>
+        <vol id_vol="4">
+            <date_depart>1998-01-01</date_depart>
+            <heure_depart>9:30</heure_depart>
+            <date_arrive>1998-01-01</date_arrive>
+            <heure_arrive>11:25</heure_arrive>
+            <ref_avion>1</ref_avion>
+            <ref_compagnie>3</ref_compagnie>
+            <aeroport_depart>Alger</aeroport_depart>
+            <aeroport_arrive>Lille</aeroport_arrive>
+            <piste_depart>1</piste_depart>
+            <pist_arrive>3</pist_arrive>  
+        </vol>
+    </vols>
+</aeroport>
