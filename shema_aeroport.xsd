@@ -104,7 +104,7 @@
                                         <xs:element name="aeroport_depart" type="xs:string"/>
                                         <xs:element name="aeroport_arrive" type="xs:string"/>
                                         <xs:element name="piste_depart" type="xs:integer"/>
-                                        <xs:element name="piste_arrive" type="xs:integer"/>
+                                        <xs:element name="pist_arrive" type="xs:integer"/>
                                     </xs:sequence>
                                     <xs:attribute name="id_vol" type="xs:integer"/>
                                 </xs:complexType>

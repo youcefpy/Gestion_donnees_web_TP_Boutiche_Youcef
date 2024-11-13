@@ -211,9 +211,9 @@
     <vols>
         <vol id_vol="1">
             <date_depart>1998-01-01</date_depart>
-            <heure_depart>10:30</heure_depart>
+            <heure_depart>10:30:00</heure_depart>
             <date_arrive>1998-01-01</date_arrive>
-            <heure_arrive>11:30</heure_arrive>
+            <heure_arrive>11:30:00</heure_arrive>
             <ref_avion>1</ref_avion>
             <ref_compagnie>1</ref_compagnie>
             <aeroport_depart>CDG</aeroport_depart>
@@ -224,9 +224,9 @@
 
         <vol id_vol="2">
             <date_depart>1998-01-01</date_depart>
-            <heure_depart>11:25</heure_depart>
+            <heure_depart>11:25:00</heure_depart>
             <date_arrive>1998-01-01</date_arrive>
-            <heure_arrive>17:00</heure_arrive>
+            <heure_arrive>17:00:00</heure_arrive>
             <ref_avion>2</ref_avion>
             <ref_compagnie>2</ref_compagnie>
             <aeroport_depart>Frankfurt aeroport</aeroport_depart>
@@ -236,9 +236,9 @@
         </vol>
         <vol id_vol="3">
             <date_depart>1998-01-01</date_depart>
-            <heure_depart>11:25</heure_depart>
+            <heure_depart>11:25:00</heure_depart>
             <date_arrive>1998-01-01</date_arrive>
-            <heure_arrive>17:00</heure_arrive>
+            <heure_arrive>17:00:00</heure_arrive>
             <ref_avion>3</ref_avion>
             <ref_compagnie>2</ref_compagnie>
             <aeroport_depart>Paris</aeroport_depart>
@@ -248,9 +248,9 @@
         </vol>
         <vol id_vol="4">
             <date_depart>1998-01-01</date_depart>
-            <heure_depart>9:30</heure_depart>
+            <heure_depart>09:30:00</heure_depart>
             <date_arrive>1998-01-01</date_arrive>
-            <heure_arrive>11:25</heure_arrive>
+            <heure_arrive>11:25:00</heure_arrive>
             <ref_avion>1</ref_avion>
             <ref_compagnie>3</ref_compagnie>
             <aeroport_depart>Alger</aeroport_depart>
