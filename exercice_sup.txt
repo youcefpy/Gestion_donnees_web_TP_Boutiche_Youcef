@@ -1,0 +1,9 @@
+
+#Afficher les dates de chacun des vols
+//vol/date_depart
+
+#Récupérer la piste du 1er vol
+//vol[1]/piste_depart
+
+#Afficher le nom du pilote pour chacun des vols
+//employe[role='Pilote']/nom
